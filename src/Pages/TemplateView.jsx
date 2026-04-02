@@ -4,6 +4,7 @@ import { resumeTemplates } from '../data/Template'
 import './TemplateView.css'
 import { useLocation } from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
+import { UserNavbar } from '../Components/UserDashboard/UserNavbar';
 
 
 export function TemplateView() {
@@ -43,6 +44,7 @@ export function TemplateView() {
     return (
         <div className="template-view">
             <FullNavbar />
+            {/* <UserNavbar/> */}
             <div class="content-panel">
 
 
@@ -77,10 +79,10 @@ export function TemplateView() {
 
                 <h2 class="section-title">More like this</h2>
                 <div class="template-grid">
-                    {categoryMatched.map(() =>
+                    {categoryMatched.map((item) =>
                         <div class="temp-card">
-                            <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?w=400" />
-                            <div class="temp-info">Mobile App Kit</div>
+                            <img src={item.previewImage} />
+                            <div class="temp-info">{item.title}</div>
                         </div>
                     )}
                     {/* <div class="temp-card">
