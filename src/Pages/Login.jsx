@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './Login.css';
+import { useNavigate } from "react-router-dom";
 
 export function Login() {
     // Basic state to handle the toggle animation
@@ -8,6 +9,7 @@ export function Login() {
     const toggleCard = () => {
         setIsFlipped(!isFlipped);
     };
+    const navigate = useNavigate();
 
     return (
         <div className="login-container">
@@ -24,7 +26,7 @@ export function Login() {
                         <h2>Welcome back</h2>
                         <p className="subtitle">Elevate your career with AI.</p>
 
-                        
+
 
 
                         <div className="input-group">
@@ -47,7 +49,7 @@ export function Login() {
                             <button className="btn-social"><i className="fa-brands fa-github"></i> GitHub</button>
                         </div>
 
-                        <button className="btn-auth">Sign In</button>
+                        <button className="btn-auth" onClick={() => navigate('/userDashboard')}>Sign In</button>
 
                         <div className="switch-text">
                             New here? <span className="switch-link" onClick={toggleCard}>Create account</span>
@@ -78,12 +80,13 @@ export function Login() {
                             <i className="fa-solid fa-lock"></i>
                         </div>
 
-                        <button className="btn-auth" style={{ background: 'linear-gradient(135deg, var(--primary), var(--accent))' }}>
+                        <button className="btn-auth" style={{ background: 'linear-gradient(135deg, var(--primary), var(--accent))' }}
+                            onClick={() => navigate('/userDashboard')} >
                             Get Started
                         </button>
 
                         <div className="switch-text">
-                            Already a member? <span className="switch-link" onClick={toggleCard}>Log in</span>
+                            Already a member? <span  className="switch-link" onClick={toggleCard}>Log in</span>
                         </div>
                     </div>
 

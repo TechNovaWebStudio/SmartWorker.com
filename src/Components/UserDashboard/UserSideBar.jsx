@@ -28,27 +28,27 @@ export function UserSideBar({ toolbar, setTab }) {
 
                 <nav className="nav-group">
                     <div className="nav-label">Main Menu</div>
-                    <a href="#" className={`nav-item ${toolbar === 'Dashboard' ? 'active' : ''}`} onClick={() => handleNavClick('Dashboard')}>
+                    <span className={`nav-item ${toolbar === 'Dashboard' ? 'active' : ''}`} onClick={() => handleNavClick('Dashboard')}>
                         <i className="ph ph-file-text"></i> Dashboard
-                    </a>
-                    <a href="#" className={`nav-item ${toolbar === 'ResumesList' ? 'active' : ''}`} onClick={() => handleNavClick('ResumesList')}>
+                    </span>
+                    <span className={`nav-item ${toolbar === 'ResumesList' ? 'active' : ''}`} onClick={() => handleNavClick('ResumesList')}>
                         <i className="ph ph-envelope-simple"></i> Resume Templates
-                    </a>
-                    <a href="#" className={`nav-item ${toolbar === 'PPTList' ? 'active' : ''}`} onClick={() => handleNavClick('PPTList')}>
+                    </span>
+                    <span className={`nav-item ${toolbar === 'PPTList' ? 'active' : ''}`} onClick={() => handleNavClick('PPTList')}>
                         <i className="ph ph-graduation-cap"></i> PPT Templates
-                    </a>
-                    <a href="#" className={`nav-item ${toolbar === 'PortfolioList' ? 'active' : ''}`} onClick={() => handleNavClick('PortfolioList')}>
+                    </span>
+                    <span className={`nav-item ${toolbar === 'PortfolioList' ? 'active' : ''}`} onClick={() => handleNavClick('PortfolioList')}>
                         <i className="ph ph-graduation-cap"></i> Portfolio Templates
-                    </a>
-                    <a href="#" className={`nav-item ${toolbar === 'DocumentList' ? 'active' : ''}`} onClick={() => handleNavClick('DocumentList')}>
+                    </span>
+                    <span className={`nav-item ${toolbar === 'DocumentList' ? 'active' : ''}`} onClick={() => handleNavClick('DocumentList')}>
                         <i className="ph ph-envelope-simple"></i> Document Templates
-                    </a>
-                    <a href="#" className={`nav-item ${toolbar === 'DraftProject' ? 'active' : ''}`} onClick={() => handleNavClick('DraftProject')}>
+                    </span>
+                    <span className={`nav-item ${toolbar === 'DraftProject' ? 'active' : ''}`} onClick={() => handleNavClick('DraftProject')}>
                         <i className="ph ph-envelope-simple"></i> Draft Templates
-                    </a>
-                    <a href="#" className={`nav-item ${toolbar === 'AIFeatuars' ? 'active' : ''}`} onClick={() => handleNavClick('AIFeatuars')}>
+                    </span>
+                    <span className={`nav-item ${toolbar === 'AIFeatuars' ? 'active' : ''}`} onClick={() => handleNavClick('AIFeatuars')}>
                         <i className="ph ph-envelope-simple"></i> AI Features
-                    </a>
+                    </span>
                 </nav>
 
                 <nav className="nav-group">

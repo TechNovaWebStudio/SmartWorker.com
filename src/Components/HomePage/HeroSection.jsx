@@ -27,25 +27,10 @@ export function HeroSection() {
             landing their dream jobs.
           </p>
 
-          <div className="cta-group">
-            <button className="btn btn-primary">
-              Create Resume
-            </button>
-            <button
-              className="btn"
-              style={{
-                background: 'transparent',
-                border: '1px solid #ddd',
-                marginLeft: '15px',
-              }}
-            >
-              Watch Video
-            </button>
-          </div>
-
           <div
             style={{
-              marginTop: '50px',
+              
+              marginBottom: '30px',
               display: 'flex',
               alignItems: 'center',
               gap: '15px',
@@ -87,6 +72,24 @@ export function HeroSection() {
               Trusted by 50,000+ teams
             </span>
           </div>
+
+          <div className="cta-group">
+            <button className="btn btn-primary">
+              Create Resume
+            </button>
+            <button
+              className="btn"
+              style={{
+                background: 'transparent',
+                border: '1px solid #ddd',
+                marginLeft: '15px',
+              }}
+            >
+              Watch Video
+            </button>
+          </div>
+
+          
         </div>
 
         <div
